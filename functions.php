@@ -1,7 +1,7 @@
 <?php
 
-include_once( 'class-wp_bootstrap_navwalker.php' );
-include_once( 'shortcode-query_posts.php' ); 
+include_once( 'inc/class-wp_bootstrap_navwalker.php' );
+include_once( 'inc/shortcode-query_posts.php' ); 
 
 function kafka_theme_setup(){
 	

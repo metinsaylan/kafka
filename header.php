@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-	<style> <?php include 'theme.css'; ?> </style>
+	<style> <?php include 'theme.min.css'; ?> </style>
 <?php wp_head();?>
   </head>
 <body <?php body_class(); ?>>

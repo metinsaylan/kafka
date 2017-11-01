@@ -29,12 +29,15 @@ function kafka_theme_setup(){
 
 function kafka_theme_scripts() {
 
-  /*wp_register_script( 'popper', get_template_directory_uri() . '/assets/popper.min.js', array( ), null, true );
-  wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap.min.js', array( 'popper' ), null, true );
+  wp_register_script( 'popper', get_template_directory_uri() . '/assets/js/popper.min.js', array( ), null, true );
+  wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'popper' ), null, true );
+
+  wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.min.css', array(), null );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), null );
 
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'popper' );
-  wp_enqueue_script( 'bootstrap' );*/
+  wp_enqueue_script( 'bootstrap' );
 
 }
 add_action( 'wp_enqueue_scripts', 'kafka_theme_scripts' );

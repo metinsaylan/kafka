@@ -1,5 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:700|Raleway:500);
-/* COMMON */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/* Clearfix */
+.cf:before,.cf:after { content: " "; display: table }
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+/* Common */
 .text-center { text-align: center }
 .text-left { text-align: left }
 .text-right { text-align: right }
@@ -18,13 +23,28 @@
 .w460 { max-width: 460px }
 .border { border: 3px solid #fff }
 .shadow { box-shadow: rgba(0,0,0,.4) 0 1px 4px }
+.small{ font-size: 85%; }
+
+.aligncenter { float: none; margin: 1.64em auto }
+.alignleft { float: left; margin-right: 1.64em }
+.alignright { float: right; margin-left: 1.64em }
+.wp-caption { margin-bottom: 1.64em; max-width: 100% }
+
+
+
+p.wp-caption-text {
+    font-weight: 100;
+    text-align: center;
+    margin: .4em 0 0;
+    font-size: .9em;
+}
 
 /* TYPOGRAPHY */
 body,button,input,select,textarea {
-    font-family: "Raleway",sans-serif;
+    font-family: "Roboto",sans-serif;
     color: #333;
     font-size: 18px;
-    font-weight: 500
+    font-weight: 400
 }
 
 h1,h2,h3,h4,.entry-title {
@@ -139,12 +159,12 @@ div.dropshadow img {
     border-radius: 16px
 }
 
-footer.mastfoot {
+.footer {
     background: #e5e5e1;
     padding: 30px 0 50px;
     margin-top: 40px;
     border-top: 2px solid #fff;
-    box-shadow: inset #cecebcba 0 2px 15px
+    box-shadow: inset rgba(206, 206, 188, 0.77) 0 2px 15px;
 }
 
 header.entry-header {
@@ -154,7 +174,7 @@ header.entry-header {
 }
 
 .tag {
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 7px;
     padding: 2px 8px;
     margin: 4px 5px 3px 0;
@@ -164,7 +184,8 @@ header.entry-header {
 }
 
 .e-content img {
-    max-width: 100%
+    max-width: 100%;
+    height: auto
 }
 
 img.aligncenter {

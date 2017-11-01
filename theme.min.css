@@ -130,11 +130,12 @@ body {
 }
 
 nav.navbar {
-    background: transparent;
-    box-shadow: none;
-    padding: 30px 0;
-    position: relative;
-    z-index: 9
+  background: transparent;
+  box-shadow: none;
+  padding: 30px 0;
+  position: relative;
+  z-index: 9;
+  border: 0;
 }
 
 .navbar-default .navbar-brand {

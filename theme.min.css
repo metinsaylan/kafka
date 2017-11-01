@@ -216,18 +216,18 @@ p.btn-wrap {
     text-align: center
 }
 
-.wp-pagenavi a,.wp-pagenavi>span,.paginated-comments-links>span,.paginated-comments-links a {
+.wp-pagenavi a,.wp-pagenavi>span,.paginated-comments-links>span,.paginated-comments-links a, .pager li>a, .pager li>span {
     display: inline-block;
     padding: 0 15px;
     border: 3px solid #fff;
     box-shadow: rgba(0,0,0,.4) 0 1px 4px;
     margin: 3px;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 22px;
     color: #000
 }
 
-.wp-pagenavi>span,.paginated-comments-links>span {
+.wp-pagenavi>span,.paginated-comments-links>span, .pager li>span {
     color: #bbb;
     box-shadow: none
 }

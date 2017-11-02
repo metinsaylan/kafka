@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700|Raleway:500);
+
+/* Core */
+body { background-color: #fafaf8 }
+blockquote { background: #fff; box-shadow: rgba(0,0,0,.4) 0 1px 4px; border-color: #e5e5e1; margin: 40px 0 }
+code { padding: .2rem .4rem; font-size: 90%; color: #bd4147; background-color: #e5e5e1; border-radius: 6px }
+pre { background: #fff; border: 3px solid #e5e5e1; border-radius: 8px; font-size: 15px }
+
+/* Links */
+a { color: #268bd2; text-decoration: none }
+a:hover,a:focus { color: #16527c; text-decoration: none }
+.entry-title a { color: #333 }
+.entry-title a:hover { color: #268bd2; }
+
+/* Clearfix */
+.cf:before,.cf:after { content: " "; display: table }
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+/* Common Classes */
+.text-center { text-align: center }
+.text-left { text-align: left }
+.text-right { text-align: right }
+.m0 { margin: 0 }
+.mb { margin-bottom: 30px }
+.mt { margin-top: 2rem }
+.ma { margin-left: auto; margin-right: auto }
+.p0 { padding: 0 }
+.pad { padding: 20px }
+.pad2 { padding: 2rem }
+.pt { padding-top: 1rem }
+.pb { padding-bottom: 1rem }
+.clr { clear: both }
+.scroll { max-height: 340px; overflow-y: scroll }
+.muted,.post-date,.p-author,a[rel*="category"] { color: #afafaf }
+.w460 { max-width: 460px }
+.border { border: 3px solid #fff }
+.shadow { box-shadow: rgba(0,0,0,.4) 0 1px 4px }
+.small{ font-size: 85%; }
+
+.aligncenter { float: none; margin: 1.64em auto }
+.alignleft { float: left; margin-right: 1.64em }
+.alignright { float: right; margin-left: 1.64em }
+.wp-caption { margin-bottom: 1.64em; max-width: 100% }
+p.wp-caption-text { font-weight: 100; text-align: center; margin: .4em 0 0; font-size: .9em }
+
+/* TYPOGRAPHY */
+body,button,input,select,textarea { font-family: "Raleway",sans-serif; color: #333; font-size: 18px; font-weight: 500 }
+h1,h2,h3,h4,.entry-title { font-family: "Roboto",sans-serif }
+
+.entry-title { font-size: 36px; margin: 0 0 10px }
+h1.entry-title { font-size: 44px }
+h6.entry-title { font-size: 22px; max-height: 72px; overflow: hidden; margin-bottom: 10px; font-family: "Raleway",sans-serif; font-weight: 500 }
+
+h4.widget-title, .e-content h3 { font-weight: 700; font-size: 30px; color: #850086 }
+h4.widget-title{ margin-top: 0 }
+
+/* Theme */
+
+nav.navbar { background: transparent; box-shadow: none; padding: 30px 0; position: relative; z-index: 9; border: 0; }
+.navbar-default .navbar-brand { color: #e5e5e1; font-weight: 700; font-size: 40px }
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
+ color: #212121; background-color: #e5e5e1 }
+
+.listing { font-size: 15px; color: #999 }
+.listing p { margin: 0 }
+
+div.dropshadow img {
+   box-shadow: rgba(0,0,0,.4) 0 3px 12px;
+   border: 30px solid #000;
+   border-radius: 16px
+}
+
+.footer {
+   background: #e5e5e1;
+   padding: 30px 0 50px;
+   margin-top: 40px;
+   border-top: 2px solid #fff;
+   box-shadow: inset rgba(206, 206, 188, 0.77) 0 2px 15px;
+}
+
+header.entry-header {
+   padding-bottom: 20px;
+   border-bottom: 3px solid #e5e5e1;
+   margin-bottom: 40px
+}
+
+span.tag {
+ display: inline-block;
+ border: 2px solid;
+ border-radius: 7px;
+ padding: 0px 8px;
+ margin: 4px 5px 3px 0;
+ background-color: #fff;
+ border-bottom-left-radius: 0;
+ color: #268bd2;
+ white-space: nowrap;
+ line-height: 30px }
+
+.e-content img {
+   max-width: 100%;
+   height: auto
+}
+
+p.btn-wrap {
+   background: #f0f0ef;
+   padding: 40px;
+   text-align: center;
+   margin: 30px 0
+}
+
+.post-navigation {
+   border-top: 3px solid #eee;
+   padding-top: 40px;
+   margin-top: 40px
+}
+
+/* Sidebar */
+.widget p:last-child, .widget ul:last-child { margin-bottom: 0 }
+
+/* Pagenavi */
+
+.wp-pagenavi,.comments-navigation {
+   padding: 50px 0;
+   text-align: center
+}
+
+.wp-pagenavi a,.wp-pagenavi>span,.paginated-comments-links>span,.paginated-comments-links a, .pager li>a, .pager li>span {
+   display: inline-block;
+   padding: 0 15px;
+   border: 3px solid #fff;
+   box-shadow: rgba(0,0,0,.4) 0 1px 4px;
+   margin: 3px;
+   border-radius: 8px;
+   font-size: 22px;
+   color: #000
+}
+
+.wp-pagenavi>span,.paginated-comments-links>span, .pager li>span {
+   color: #bbb;
+   box-shadow: none
+}
+
+.wp-pagenavi a:hover,.paginated-comments-links a:hover {
+   text-decoration: none
+}
+
+.syntaxhighlighter {
+   border: 3px solid #eee;
+   padding: 15px 0;
+   border-radius: 8px;
+   margin: 30px auto
+}

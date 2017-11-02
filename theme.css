@@ -36,11 +36,15 @@ a:hover,a:focus { color: #16527c; text-decoration: none }
 .w460 { max-width: 460px }
 .border { border: 3px solid #fff }
 .shadow { box-shadow: rgba(0,0,0,.4) 0 1px 4px }
-.small{ font-size: 85%; }
+.small { font-size: 85%; }
 
+/* Alignments */
+.aligncenter, .alignleft, .alignright{ display: block }
 .aligncenter { float: none; margin: 1.64em auto }
 .alignleft { float: left; margin-right: 1.64em }
 .alignright { float: right; margin-left: 1.64em }
+
+/* Captions */
 .wp-caption { margin-bottom: 1.64em; max-width: 100% }
 p.wp-caption-text { font-weight: 100; text-align: center; margin: .4em 0 0; font-size: .9em }
 

@@ -83,8 +83,17 @@ header.entry-header {
     margin-bottom: 40px
 }
 
-a.tag { border: 2px solid; border-radius: 7px; padding: 2px 8px;  margin: 4px 5px 3px 0; background-color: #fff; border-bottom-left-radius: 0;
-  color: #268bd2 }
+span.tag {
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 0px 8px;
+  margin: 4px 5px 3px 0;
+  background-color: #fff;
+  border-bottom-left-radius: 0;
+  color: #268bd2;
+  white-space: nowrap;
+  line-height: 30px }
 
 .e-content img {
     max-width: 100%;

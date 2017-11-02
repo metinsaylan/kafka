@@ -29,15 +29,7 @@
 .alignleft { float: left; margin-right: 1.64em }
 .alignright { float: right; margin-left: 1.64em }
 .wp-caption { margin-bottom: 1.64em; max-width: 100% }
-
-
-
-p.wp-caption-text {
-    font-weight: 100;
-    text-align: center;
-    margin: .4em 0 0;
-    font-size: .9em;
-}
+p.wp-caption-text { font-weight: 100; text-align: center; margin: .4em 0 0; font-size: .9em }
 
 /* TYPOGRAPHY */
 body,button,input,select,textarea {

@@ -1,6 +1,6 @@
 title: KafKa WordPress Theme
 tagline: A theme built for speed and readability!
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 baseurl: '/kafka-wordpress-theme'
 

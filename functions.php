@@ -3,12 +3,17 @@
 include_once( 'inc/class-wp_bootstrap_navwalker.php' );
 include_once( 'inc/shortcode-query_posts.php' );
 include_once( 'inc/filter-the_title.php' );
+include_once( 'inc/filter-title_separator.php' );
+include_once( 'inc/filter-disable_emojis.php' );
 
 function kafka_theme_setup(){
 
+  add_editor_style();
   add_theme_support( 'custom-background' );
   add_theme_support( 'nav-menus' );
   add_theme_support( 'title-tag' );
+  add_post_type_support( 'page', 'excerpt' );
+  
 
 	register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'kafka' ),

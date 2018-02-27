@@ -9,7 +9,7 @@
 
 	if( $post_permalink != $previous_post ):
 ?>
-<div class="prev-post col-md-6 text-right">
+<div class="prev-post col-md-6 text-right mb">
 	<a href="<?php echo $previous_post; ?>" title="Previous post" data-toggle="tooltip" data-placement="left">
   <div class="border shadow pad cf">
 	<div class="sqr alignleft mr pagination-thumb prev-thumb">
@@ -22,7 +22,7 @@
 </div>
 <?php endif; ?>
 <?php if( $post_permalink != $next_post ): ?>
-<div class="next-post col-md-6">
+<div class="next-post col-md-6 mb">
 	<a href="<?php echo $next_post; ?>" title="Previous post" data-toggle="tooltip" data-placement="left">
   <div class="border shadow pad cf">
 	<div class="sqr alignright ml pagination-thumb next-thumb">

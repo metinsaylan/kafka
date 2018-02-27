@@ -9,25 +9,43 @@ if( have_posts() ){
   the_post();
 
 ?>
-<div class="h-entry cf">
-  <header class="entry-header">
-  <h1 class="entry-title p-name"><a href="<?php the_permalink(); ?>" rel="bookmark" class="u-url"><?php the_title(); ?></a></h1>
-	<p class="post-meta">
+<div class="h-entry border border-bottom cf">
+  <header class="entry-header border border-bottom">
+  <h1 class="entry-title p-name m0"><a href="<?php the_permalink(); ?>" rel="bookmark" class="u-url"><?php the_title(); ?></a></h1>
+	<?php if( has_excerpt() ): ?>
+		<p class="lead m0"><?php echo wp_strip_all_tags( get_the_excerpt(), true ); ?></p>
+	<?php endif; ?>
+	<p class="post-meta m0">
 	  <span class="post-categories"><?php the_category(' '); ?></span>
 	  <span class="separator muted"> // </span>
 	  <time class="post-date dt-published" datetime="<?php the_time('c'); ?>"><?php the_date('F j, Y'); ?></time>
 	  <span class="separator muted"> // </span>
 	  <span class="entry-author"><a class="p-author h-card" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
-	  <div class="post-tags"><?php the_tags( '<span class="tag">#', '</span><span class="tag">#', '</span>' ); ?></div>
 	</p>
   </header>
   <div class="page-content e-content" role="main">
+	<?php get_template_part( 'banner', 'post' ) ?>
     <?php the_content(); ?>
   </div>
+  
+	<footer class="entry-footer">
+		<p class="post-meta">
+			<div class="post-tags"><strong>Tags: </strong><?php the_tags( '<span class="tag">', '</span><span class="tag">', '</span>' ); ?></div>
+		</p>  
+		<?php get_template_part( 'banner', 'post' ) ?>	
+	</footer>
+  
 </div>
-<?php get_template_part('nav', 'post'); ?>
-<?php
 
+<?php 
+ if ( comments_open() || get_comments_number() ) :
+    comments_template();
+ endif;
+?>
+
+<?php get_template_part('nav', 'post'); ?>
+
+<?php
 	endwhile;
 }
  ?>

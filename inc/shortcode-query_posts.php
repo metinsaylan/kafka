@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-function stf_queryposts($atts){
+function kafka_queryposts($atts){
 
 	extract(shortcode_atts( array(
 	'category_id' => '',
@@ -9,15 +9,15 @@ function stf_queryposts($atts){
 	'day' => '',
 	'month' => '',
 	'year' => '',
-	'count' => '-1', 
+	'count' => '-1',
 	'author_id' => '',
 	'author_name' => '',
 	'order_by' => 'date',
 	), $atts));
-	
+
 	$output = '';
 	$query = array();
-	
+
 	if ($category_id != '') $query[] = 'cat=' .$category_id;
 	if ($category_name != '') $query[] = 'category_name=' .$category_name;
 	if ($tag != '') $query[] = 'tag=' . $tag;
@@ -36,7 +36,7 @@ function stf_queryposts($atts){
 	$output = '';
 	$temp_title = '';
 	$temp_link = '';
-  
+
 	if ($posts->have_posts()):
 		$output = '<ul>';
 		while ($posts->have_posts()):
@@ -47,10 +47,10 @@ function stf_queryposts($atts){
 		endwhile;
 		$output .= '</ul>';
 	else:
-		$output .= '<p class="error">[query] '.__("No posts found matching the arguments", 'stf').'</p>';
+		$output .= '<p class="error">'.__("No posts found.", 'kafka').'</p>';
 	endif;
-	
+
 	wp_reset_postdata();
 	return $output;
-  
-} add_shortcode('query_posts', 'stf_queryposts');
+
+} add_shortcode('query_posts', 'kafka_queryposts');

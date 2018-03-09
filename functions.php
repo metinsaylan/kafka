@@ -1,5 +1,6 @@
 <?php
 
+include_once( 'inc/kafka-customizer.php' );
 include_once( 'inc/class-wp_bootstrap_navwalker.php' );
 
 /* Shortcodes */

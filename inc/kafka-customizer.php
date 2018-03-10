@@ -13,7 +13,43 @@ class kafka_Customize {
          )
       );
 
+      $wp_customize->add_section( 'kafka_ads',
+         array(
+            'title'       => __( 'Ⓦ KΛfKΛ Ads', 'kafka' ),
+            'priority'    => 36,
+            'capability'  => 'edit_theme_options',
+            'description' => __('Ad codes for ad areas on sidebar and post pages.', 'kafka'),
+         )
+      );
+
       $wp_customize->remove_setting( 'background_color' );
+
+/* Ads */
+$wp_customize->add_setting( 'kafka_sidebar_adcode', array(
+  'capability' => 'edit_theme_options',
+  'default' => '',
+  'sanitize_callback' => '',
+) );
+
+$wp_customize->add_control( 'kafka_sidebar_adcode', array(
+  'type' => 'textarea', 
+  'section' => 'kafka_ads',
+  'label' => __( 'Sidebar Ad Code' ),
+  'description' => __( 'Insert Sidebar Ad Code Here.' ),
+) );
+
+$wp_customize->add_setting( 'kafka_banner_adcode', array(
+  'capability' => 'edit_theme_options',
+  'default' => '',
+  'sanitize_callback' => '',
+) );
+
+$wp_customize->add_control( 'kafka_banner_adcode', array(
+  'type' => 'textarea',
+  'section' => 'kafka_ads',
+  'label' => __( 'Banner Ad Code' ),
+  'description' => __( 'Insert Banner Ad Code Here.' ),
+) );
 
 /* Footer Text */
 

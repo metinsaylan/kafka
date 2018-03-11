@@ -13,4 +13,7 @@
     <a href="https://wordpress.org/" target="_blank">Ⓦ</a> ＋ <a href="http://metinsaylan.com/kafka-wordpress-theme/" title="A WordPress theme by metinsaylan" target="_blank">KΛfKΛ</a>
   </p>
 </div>
-<?php wp_footer();?> </footer> </body> </html>
+<?php wp_footer();?> </footer>
+
+<div id="bgstripe"></div>
+</body> </html>

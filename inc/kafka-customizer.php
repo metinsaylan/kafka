@@ -159,6 +159,27 @@ $wp_customize->add_setting(
     		)
     	);
 
+
+      $wp_customize->add_setting(
+          'kafka_footer_text',
+          array(
+            'default'            => '&copy; 2018  <a href="' . get_bloginfo( 'url' )  . '" class="muted">' . get_bloginfo( 'name' ) . '</a> - ' . get_bloginfo( 'description' ),
+            'sanitize_callback'  => 'sanitize_text_field',
+            'transport'          => 'postMessage'
+          )
+        );
+
+        $wp_customize->add_control(
+          'kafka_footer_text',
+          array(
+            'section'  => 'kafka_options',
+            'label'    => 'Footer Text',
+            'type'     => 'text'
+          )
+        );
+
+
+
     /* Colors */
 
 

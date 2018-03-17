@@ -21,6 +21,12 @@
 		} );
 	} );
 
+	wp.customize( 'kafka_footer_text', function( value ) {
+		value.bind( function( newval ) {
+			$('#footer-text').html( newval );
+		} );
+	} );
+
 	//Update site background color...
 	wp.customize( 'bgcolor_light', function( value ) {
 		value.bind( function( newval ) {

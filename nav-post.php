@@ -2,9 +2,9 @@
 <div class="row mt mb">
 <?php
 	$post_permalink = get_permalink();
-	$pID = get_adjacent_post(false,'',false);
+	$pID = get_adjacent_post(true,'',false);
 	$previous_post = get_permalink( $pID );
-	$nID = get_adjacent_post(false,'',true);
+	$nID = get_adjacent_post(true,'',true);
 	$next_post = get_permalink( $nID );
 
 	if( $post_permalink != $previous_post ):

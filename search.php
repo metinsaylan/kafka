@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <div class="row">
-  <div class="col-md-8">	
-  
-<div class="page-header">
-Search results for <strong><?php echo get_search_query(); ?></strong>
+  <div class="col-md-8">
+
+<div class="mb">
+<h1 class="page-title">Search results for <strong><?php echo get_search_query(); ?></strong></h1>
 </div>
 
-<?php if( have_posts() ){ $ctr = 0; while( have_posts() ): the_post(); $ctr++; 
+<?php if( have_posts() ){ $ctr = 0; while( have_posts() ): the_post(); $ctr++;
 
 if( $ctr == 2 || $ctr == 5 ){
 	get_template_part( 'banner', 'post' );
@@ -20,7 +20,7 @@ if( $ctr == 2 || $ctr == 5 ){
 <?php endwhile; ?>
 
 <?php get_template_part( 'banner', 'post' ); ?>
-<?php get_template_part('nav', 'blog'); 
+<?php get_template_part('nav', 'blog');
 
 } else { get_template_part('content', '404'); } ?>
   </div>

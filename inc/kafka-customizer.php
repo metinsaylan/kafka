@@ -186,7 +186,7 @@ $wp_customize->add_setting(
 
       $wp_customize->add_setting( 'kafka_text_color',
          array(
-            'default'    => '#333',
+            'default'    => '#333333',
             'type'       => 'theme_mod',
             'capability' => 'edit_theme_options',
             'transport'  => 'postMessage',

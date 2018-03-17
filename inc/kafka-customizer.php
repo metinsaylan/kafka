@@ -10,14 +10,15 @@ class kafka_Customize {
         )
      );
 
-     $wp_customize->add_setting( 'kafka_typography_googlefonts',
+     $wp_customize->add_setting( 'kafka_google_fonts',
      		array(
      			'default'            => 'Roboto+Condensed:700|Roboto+Slab:400,600',
-     			'sanitize_callback'  => 'sanitize_text_field'
+     			'sanitize_callback'  => 'sanitize_text_field',
+          'description' => 'Add google font import statements to css.'
      		)
      	);
 
-      	$wp_customize->add_control( 'kafka_typography_googlefonts',
+      	$wp_customize->add_control( 'kafka_google_fonts',
       		array(
       			'section'  => 'kafka_typography',
       			'label'    => 'Google Fonts Import',
@@ -25,7 +26,7 @@ class kafka_Customize {
       		)
       	);
 
-        $wp_customize->add_setting( 'kafka_text_size',
+        $wp_customize->add_setting( 'kafka_font_size',
         		array(
         			'default'            => '16px',
         			'sanitize_callback'  => 'sanitize_text_field',
@@ -33,10 +34,10 @@ class kafka_Customize {
         		)
         	);
 
-          $wp_customize->add_control( 'kafka_text_size',
+          $wp_customize->add_control( 'kafka_font_size',
          		array(
          			'section'  => 'kafka_typography',
-         			'label'    => 'Font Size',
+         			'label'    => 'Base Font Size',
          			'type'     => 'text'
          		)
          	);
@@ -105,7 +106,7 @@ $wp_customize->add_control( 'kafka_banner_adcode', array(
 
 /* Spacing */
 $wp_customize->add_setting(
-		'global_padding',
+		'kafka_global_padding',
 		array(
 			'default'            => '30px',
 			'sanitize_callback'  => 'sanitize_text_field',
@@ -114,7 +115,7 @@ $wp_customize->add_setting(
 	);
 
 	$wp_customize->add_control(
-		'global_padding',
+		'kafka_global_padding',
 		array(
 			'section'  => 'kafka_options',
 			'label'    => 'Global Spacing',
@@ -123,7 +124,7 @@ $wp_customize->add_setting(
 	);
 
   $wp_customize->add_setting(
-  		'global_border',
+  		'kafka_global_border',
   		array(
   			'default'            => '3px',
   			'sanitize_callback'  => 'sanitize_text_field',
@@ -132,7 +133,7 @@ $wp_customize->add_setting(
   	);
 
   	$wp_customize->add_control(
-  		'global_border',
+  		'kafka_global_border',
   		array(
   			'section'  => 'kafka_options',
   			'label'    => 'Global Border',
@@ -141,7 +142,7 @@ $wp_customize->add_setting(
   	);
 
     $wp_customize->add_setting(
-    		'global_shadow',
+    		'kafka_global_shadow',
     		array(
     			'default'            => '0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08); border-radius: 2px',
     			'sanitize_callback'  => 'sanitize_text_field',
@@ -150,7 +151,7 @@ $wp_customize->add_setting(
     	);
 
     	$wp_customize->add_control(
-    		'global_shadow',
+    		'kafka_global_shadow',
     		array(
     			'section'  => 'kafka_options',
     			'label'    => 'Global CSS Box Shadow',
@@ -182,9 +183,9 @@ $wp_customize->add_setting(
          )
       ) );
 
-      $wp_customize->add_setting( 'link_textcolor',
+      $wp_customize->add_setting( 'kafka_link_color',
          array(
-            'default'    => '#2BA6CB',
+            'default'    => '#268bd2',
             'type'       => 'theme_mod',
             'capability' => 'edit_theme_options',
             'transport'  => 'postMessage',
@@ -193,16 +194,16 @@ $wp_customize->add_setting(
 
       $wp_customize->add_control( new WP_Customize_Color_Control(
          $wp_customize,
-         'kafka_link_textcolor',
+         'kafka_link_color',
          array(
             'label'      => __( 'Link Color', 'kafka' ),
-            'settings'   => 'link_textcolor',
+            'settings'   => 'kafka_link_color',
             'priority'   => 10,
             'section'    => 'colors',
          )
       ) );
 
-      $wp_customize->add_setting( 'bgcolor_light',
+      $wp_customize->add_setting( 'kafka_bgcolor_light',
          array(
             'default'    => '#f0f0f0',
             'type'       => 'theme_mod',
@@ -216,13 +217,13 @@ $wp_customize->add_setting(
          'kafka_bgcolor_light',
          array(
             'label'      => __( 'Background Light Color', 'kafka' ),
-            'settings'   => 'bgcolor_light',
+            'settings'   => 'kafka_bgcolor_light',
             'priority'   => 10,
             'section'    => 'colors',
          )
       ) );
 
-      $wp_customize->add_setting( 'bgcolor_dark',
+      $wp_customize->add_setting( 'kafka_bgcolor_dark',
          array(
             'default'    => '#e6e6e6',
             'type'       => 'theme_mod',
@@ -236,7 +237,7 @@ $wp_customize->add_setting(
          'kafka_bgcolor_dark',
          array(
             'label'      => __( 'Background Dark Color', 'kafka' ),
-            'settings'   => 'bgcolor_dark',
+            'settings'   => 'kafka_bgcolor_dark',
             'priority'   => 11,
             'section'    => 'colors',
          )
@@ -250,7 +251,7 @@ $wp_customize->add_setting(
    public static function header_output() {
       ?>
       <style type="text/css">
-           <?php self::generate_css( '.sidebar a, .e-content a', 'color', 'link_textcolor' ); ?>
+           <?php self::generate_css( '.sidebar a, .e-content a', 'color', 'kafka_link_color' ); ?>
       </style>
       <?php
    }

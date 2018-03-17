@@ -2,14 +2,11 @@
 if ( post_password_required() )
     return;
 ?>
-
-<hr />
- 
-<div id="comments" class="comments-area">
+<div id="comments" class="pad comments-area">
  
     <?php if ( have_comments() ) : ?>
 
-        <ol class="comment-list">
+        <ol class="comment-list p0">
             <?php
                 wp_list_comments( array(
                     'style'       => 'ol',

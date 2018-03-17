@@ -11,7 +11,7 @@
 ?>
 <div class="prev-post col-md-6 text-right mb">
 	<a href="<?php echo $previous_post; ?>" title="Previous post" data-toggle="tooltip" data-placement="left">
-  <div class="border shadow pad cf">
+  <div class="bglight border shadow pad cf">
 	<div class="sqr alignleft mr pagination-thumb prev-thumb">
 	  <?php echo get_the_post_thumbnail( $pID->ID, array( 120, 120) ); ?>
 	</div>
@@ -24,7 +24,7 @@
 <?php if( $post_permalink != $next_post ): ?>
 <div class="next-post col-md-6 mb">
 	<a href="<?php echo $next_post; ?>" title="Previous post" data-toggle="tooltip" data-placement="left">
-  <div class="border shadow pad cf">
+  <div class="bglight border shadow pad cf">
 	<div class="sqr alignright ml pagination-thumb next-thumb">
 	  <?php echo get_the_post_thumbnail( $nID->ID, array( 120, 120) ); ?>
 	</div>

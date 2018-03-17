@@ -9,8 +9,8 @@ if( have_posts() ){
   the_post();
 
 ?>
-<div class="h-entry border border-bottom cf">
-  <header class="entry-header border border-bottom">
+<div class="h-entry border cf">
+  <header class="entry-header border border-bottom mb">
   <h1 class="entry-title p-name m0"><a href="<?php the_permalink(); ?>" rel="bookmark" class="u-url"><?php the_title(); ?></a></h1>
 	<?php if( has_excerpt() ): ?>
 		<p class="lead m0"><?php echo wp_strip_all_tags( get_the_excerpt(), true ); ?></p>
@@ -27,17 +27,17 @@ if( have_posts() ){
 	<?php get_template_part( 'banner', 'post' ) ?>
     <?php the_content(); ?>
   </div>
-  
+
 	<footer class="entry-footer">
 		<p class="post-meta">
 			<div class="post-tags"><strong>Tags: </strong><?php the_tags( '<span class="tag">', '</span><span class="tag">', '</span>' ); ?></div>
-		</p>  
-		<?php get_template_part( 'banner', 'post' ) ?>	
+		</p>
+		<?php get_template_part( 'banner', 'post' ) ?>
 	</footer>
-  
+
 </div>
 
-<?php 
+<?php
  if ( comments_open() || get_comments_number() ) :
     comments_template();
  endif;

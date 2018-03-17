@@ -12,6 +12,7 @@
   $kafka_global_border = get_theme_mod( 'kafka_global_border', '0' );
   $textmute = '#aaa';
 
+  $kafka_text_color = get_theme_mod( 'kafka_text_color', '#474747' );
   $kafka_font_size = get_theme_mod( 'kafka_font_size', '16px' );
 
 ?>
@@ -36,7 +37,7 @@ body.page-template-page-template-narrow .container { max-width: 840px }
 #bgstripe { content: ""; display: block; position: fixed; top: 25%; height: 35%; left: -120px; right: 0; z-index: -1; transform: rotate(-12deg); width: 140%; }
 
 /*- Typography */
-body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:#333; font-size: <?php echo $kafka_font_size; ?> ; font-weight:400 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
+body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:<?php echo $kafka_text_color; ?>; font-size: <?php echo $kafka_font_size; ?> ; font-weight:400 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
 
 /*- Color Fill */
 body, input[type=text].form-control, .h-entry, .entry, .sidebar .widget, .footer .widget { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: #e5e5e1; } .footer, nav.navbar, .panel-heading, code, #bgstripe { background: <?php echo $kafka_bgcolor_dark; ?> }

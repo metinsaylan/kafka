@@ -40,7 +40,7 @@ body.page-template-page-template-narrow .container { max-width: 840px }
 body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:<?php echo $kafka_text_color; ?>; font-size: <?php echo $kafka_font_size; ?> ; font-weight:400 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
 
 /*- Color Fill */
-body, input[type=text].form-control, .h-entry, .entry, .sidebar .widget, .footer .widget { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: #e5e5e1; } .footer, nav.navbar, .panel-heading, code, #bgstripe { background: <?php echo $kafka_bgcolor_dark; ?> }
+body, input[type=text].form-control, .h-entry, .entry, li.comment, .sidebar .widget, .footer .widget, .bglight { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: #e5e5e1; } .footer, nav.navbar, .panel-heading, code, #bgstripe { background: <?php echo $kafka_bgcolor_dark; ?> }
 
 /*- Links */
 a{ color:#268bd2 } a:focus,a:hover{ color:#16527c } .entry-title a{ color:#333 } .entry-title a:hover{ color:#268bd2 } a,a:focus,a:hover,.paginated-comments-links a:hover,.wp-pagenavi a:hover { text-decoration:none }
@@ -92,7 +92,7 @@ div.separator, hr { padding-top: 12px; margin-top: 45px; margin-bottom: 33px; bo
 .post-navigation { line-height: 1.5 }
 
 /*- Comments */
-ol.comment-list { padding: 0 } li.comment, li.pingback { list-style: none; border-radius: 10px; font-size: 90% } img.avatar { border-radius: 50%; border: 3px solid <?php echo $kafka_bgcolor_dark; ?>; float: left; margin-right: 20px } .comment-meta a { font-size: 85% } p.no-comments { text-align: center; font-size: 120% }
+li.comment, li.pingback { list-style: none; border-radius: 10px; } img.avatar { border-radius: 50%; border: 3px solid <?php echo $kafka_bgcolor_dark; ?>; float: left; margin-right: 20px } .comment-meta a { font-size: 85% } p.no-comments { text-align: center; font-size: 120% }
 
 /*- Pagination */
 .wp-pagenavi a:hover { background: #fff } .pager li>a,.pager li>span,.paginated-comments-links a,.paginated-comments-links>span,.wp-pagenavi a,.wp-pagenavi>span{ display:inline-block; padding:0 15px; margin:3px; border-radius:8px; font-size:22px; color:#000 }

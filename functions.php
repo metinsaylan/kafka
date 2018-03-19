@@ -16,17 +16,16 @@ function kafka_theme_setup(){
 
   add_editor_style();
 
+  add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
   add_theme_support( 'custom-background' );
   add_theme_support( 'nav-menus' );
   add_theme_support( 'title-tag' );
 
   add_post_type_support( 'page', 'excerpt' );
 
-
 	register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'kafka' ),
 	) );
-
 
   register_sidebar( array(
     'name' => __( 'Main Sidebar', 'kafka' ),

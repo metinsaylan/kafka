@@ -116,7 +116,6 @@ li.btn a { padding: 0; }
 li.menu-item.btn { margin-top: 14px; margin-left: 20px; background: #e5e5e1; color: #000; }
 
 /*- Plugins */
-.syntaxhighlighter { padding: 15px 0; }
 .e-content a:not( [href*='<?php echo bloginfo('url'); ?>'] ):not( [href^='#'] ):not( [href^='/'] ):after { content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg=="); margin: 0 3px 0 5px; }
 
 </style>

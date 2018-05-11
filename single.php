@@ -20,22 +20,29 @@ if( have_posts() ){
 	  <span class="separator muted"> // </span>
 	  <time class="post-date dt-published" datetime="<?php the_time('c'); ?>"><?php the_date('F j, Y'); ?></time>
 	  <span class="separator muted"> // </span>
-	  <span class="entry-author"><a class="p-author h-card" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
+	  <span class="entry-author"><a class="p-author h-card" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span> - Last update: <time class="post-date dt-updated" datetime="<?php the_modified_time('c'); ?>"><?php the_modified_date('F j, Y'); ?></time> <?php edit_post_link('e'); ?></p>
 	</p>
   </header>
+  
+  <?php get_template_part( 'banner', 'post' ) ?>			
+  
   <div class="page-content e-content" role="main">
-	<?php get_template_part( 'banner', 'post' ) ?>
     <?php the_content(); ?>
+	<?php get_template_part('after', 'post'); ?>
   </div>
 
 	<footer class="entry-footer">
 		<p class="post-meta">
 			<div class="post-tags"><strong>Tags: </strong><?php the_tags( '<span class="tag">', '</span><span class="tag">', '</span>' ); ?></div>
 		</p>
-		<?php get_template_part( 'banner', 'post' ) ?>
+		<?php get_template_part( 'share' ); ?>
 	</footer>
+	
+	<?php get_template_part( 'banner', 'post' ); ?>
 
 </div>
+
+
 
 <?php
  if ( comments_open() || get_comments_number() ) :

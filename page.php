@@ -2,12 +2,9 @@
 <div class="row">
   <div class="col-md-8">
 <?php
-
 if( have_posts() ){
-  
   while( have_posts() ):
   the_post();
-  
 ?>
 <div class="h-entry">
   <header class="entry-header"> 
@@ -19,6 +16,7 @@ if( have_posts() ){
   <div class="page-content e-content" role="main"> 
 	<?php get_template_part( 'banner', 'page' ) ?>
     <?php the_content(); ?>
+	<?php get_template_part( 'share' ); ?>
 	<?php get_template_part( 'banner', 'page' ) ?>
   </div>
 </div>
@@ -29,10 +27,8 @@ if( have_posts() ){
  endif;
 ?>
 
-
 <?php 
-
-	endwhile;
+  endwhile;
 }
  ?>
   </div>

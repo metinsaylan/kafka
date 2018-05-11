@@ -26,6 +26,9 @@ function kafka_theme_setup(){
 
 	register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'kafka' ),
+		'secondary' => __( 'Secondary Menu', 'kafka' ), 
+		'footer' => __( 'Footer Menu', 'kafka' ),
+		'social' => __( 'Social Menu', 'kafka' )
 	) );
 
   register_sidebar( array(

@@ -26,7 +26,7 @@
 <?php endif; ?>
 
 /* Utilities */
-a{ transition: all ease-in-out .2s } .cf:after,.clr{ clear:both } .cf:after,.cf:before{ content:" "; display:table } .m0, p.m0{ margin:0 } .mb{ margin-bottom: <?php echo $kafka_global_padding; ?> } .mt{ margin-top:2rem } .ma{ margin-left:auto; margin-right:auto } .p0{ padding:0 } .pad{ padding:<?php echo $kafka_global_padding; ?> } .pad p:last-child { margin-bottom: 0 } .pad2{ padding:2rem } .pt{ padding-top: <?php echo $kafka_global_padding; ?> } .pb{ padding-bottom: <?php echo $kafka_global_padding; ?> } .tac, .text-center{ text-align:center } .tal, .text-left{ text-align:left } .tar, .text-right{ text-align:right } .scroll{ max-height:340px; overflow-y:scroll } small, .small{ font-size:85% } ul, ol { padding-left: 0; margin-top: 0; margin-bottom: 0 } .e-content ul, .e-content ol{ padding-left: 30px } .list-style-none { list-style: none !important } .lh-condensed { line-height: 1.25 !important } .alt-text-small { font-size: 14px !important } .mb-2 { margin-bottom: 8px !important } .w460{ max-width:460px }
+a{ transition: all ease-in-out .2s } .cf:after,.clr{ clear:both } .cf:after,.cf:before{ content:" "; display:table } .m0, p.m0{ margin:0 } .mb{ margin-bottom: <?php echo $kafka_global_padding; ?> } .mt{ margin-top:2rem } .ma{ margin-left:auto; margin-right:auto } .p0{ padding:0 } .pad{ padding:<?php echo $kafka_global_padding; ?> } .pad p:last-child { margin-bottom: 0 } .pad2{ padding:2rem } .pt{ padding-top: <?php echo $kafka_global_padding; ?> } .pb{ padding-bottom: <?php echo $kafka_global_padding; ?> } .tac, .text-center{ text-align:center } .tal, .text-left{ text-align:left } .tar, .text-right{ text-align:right } .scroll{ max-height:340px; overflow-y:scroll } small, .small{ font-size:85% } .w460{ max-width:460px }
 
 /* Common */
 .aligncenter{ float:none; margin:1.64em auto } .alignleft{ float:left; margin-right:1.64em } .alignright{ float:right; margin-left:1.64em } .wp-caption{ margin-bottom:1.64em; max-width:100% } p.wp-caption-text{ font-weight:100; text-align:center; margin:.4em 0 0; font-size:.9em } img.aligncenter, img.alignleft, img.alignright { display: block }
@@ -34,12 +34,13 @@ a{ transition: all ease-in-out .2s } .cf:after,.clr{ clear:both } .cf:after,.cf:
 /*- Layout */
 body{ overflow-x: hidden }
 body.page-template-page-template-narrow .container { max-width: 840px }
+#bgstripe { content: ""; display: block; position: fixed; top: 25%; height: 35%; left: -120px; right: 0; z-index: -1; transform: rotate(-12deg); width: 140%; }
 
 /*- Typography */
-body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:<?php echo $kafka_text_color; ?>; font-size: <?php echo $kafka_font_size; ?> ; font-weight:400 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title, h1.page-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
+body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:<?php echo $kafka_text_color; ?>; font-size: <?php echo $kafka_font_size; ?> ; font-weight:400; line-height: 1.7 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title, h1.page-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
 
 /*- Color Fill */
-body { background-color: <?php echo get_theme_mod( 'kafka_body_bgcolor', '#fafaf8' ); ?> } input[type=text].form-control, .h-entry, .entry, .listing, li.comment, .sidebar .widget, .footer .widget, .bglight { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: <?php echo $kafka_bgcolor_dark; ?> } .footer, nav.navbar, .panel-heading, code { background: <?php echo $kafka_bgcolor_dark; ?> }
+body { background-color: <?php echo get_theme_mod( 'kafka_body_bgcolor', '#fafaf8' ); ?> }  input[type=text].form-control, .h-entry, .entry, .listing, li.comment, .sidebar .widget, .footer .widget, div#respond, .bglight { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: <?php echo $kafka_bgcolor_dark; ?> } .footer, nav.navbar, .panel-heading, code, #bgstripe { background: <?php echo $kafka_bgcolor_dark; ?> }
 
 /*- Links */
 a{ color:#268bd2 } a:focus,a:hover{ color:#16527c } .entry-title a{ color:#333 } .entry-title a:hover{ color:#268bd2 } a,a:focus,a:hover,.paginated-comments-links a:hover,.wp-pagenavi a:hover { text-decoration:none }
@@ -67,14 +68,14 @@ pre, blockquote, .border, .panel, .pager li>a, .pager li>span, .paginated-commen
 
 /*- Shadows */
 /*-- Outset */
-.shadow, blockquote, .panel, .pager li>a, .pager li>span, .paginated-comments-links a, .paginated-comments-links>span, .wp-pagenavi a, .wp-pagenavi>span, img.aligncenter, img.alignleft, img.alignright, li.comment, li.pingback, .h-entry { box-shadow: <?php echo $kafka_global_shadow; ?> } .pager li>span,.paginated-comments-links>span,.wp-pagenavi>span { box-shadow:none }
+.shadow, blockquote, .panel, .pager li>a, .pager li>span, .paginated-comments-links a, .paginated-comments-links>span, .wp-pagenavi a, .wp-pagenavi>span, img.aligncenter, img.alignleft, img.alignright, li.comment, li.pingback, div#respond, .h-entry { box-shadow: <?php echo $kafka_global_shadow; ?> } .pager li>span,.paginated-comments-links>span,.wp-pagenavi>span { box-shadow:none }
 
 /*-- Inset */
 .footer, nav.navbar { box-shadow: none !important; border-radius: 0 !important }
 
 /*- Other customizations */
-nav.navbar{ position:relative; z-index:9; border:0 } 
-.navbar-default .navbar-brand{ font-weight:700; font-size: 28px }
+nav.navbar{ position:relative; z-index:9; border:0 }
+.navbar-default .navbar-brand{ font-weight:700; font-size:28px }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { background-color: <?php echo $kafka_bgcolor_light; ?>; }
 .e-content img{ max-width:100%; height:auto }
 p.post-meta.m0 { margin-bottom: 8px; }
@@ -117,6 +118,14 @@ li.menu-item.btn { margin-top: 14px; margin-left: 20px; background: #e5e5e1; col
 /*- Plugins */
 .e-content a:not( [href*='<?php echo bloginfo('url'); ?>'] ):not( [href^='#'] ):not( [href^='/'] ):after { content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg=="); margin: 0 3px 0 5px; }
 
+.author h6 { margin: 0; color: #aaa } .author h3 { margin: 0 0 6px } .author img.u-photo { float: right; width: 175px; margin-left: 30px; border-radius: 6px; background: #dcebf3; padding: 6px; }
+
+.pad-sm, div#respond { padding: 8px; }
+.author-sm img.u-photo { float: left; margin-right: 8px; }
+.author-sm h4 { margin: 0;  }
+
+/* Comments */ 
+div#respond { border-radius: 6px; } h3#reply-title{ margin: 0; font-size: 24px } p.logged-in-as { margin: 0 } textarea#comment { border: 1px solid #eee; width: 100%; height: 60px } input#submit { border: 2px solid #333; background: #fff; border-radius: 6px } p.form-submit { text-align: right; margin: 0 }
 </style>
 
 </head><body <?php body_class(); ?>>

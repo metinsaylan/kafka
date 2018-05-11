@@ -223,10 +223,30 @@ $wp_customize->add_setting(
             'section'    => 'colors',
          )
       ) );
+	  
+	  $wp_customize->add_setting( 'kafka_body_bgcolor',
+         array(
+            'default'    => '#fafaf8',
+            'type'       => 'theme_mod',
+            'capability' => 'edit_theme_options',
+            'transport'  => '',
+         )
+      );
+
+      $wp_customize->add_control( new WP_Customize_Color_Control(
+         $wp_customize,
+         'kafka_body_bgcolor',
+         array(
+            'label'      => __( 'Background Color', 'kafka' ),
+            'settings'   => 'kafka_body_bgcolor',
+            'priority'   => 10,
+            'section'    => 'colors',
+         )
+      ) );
 
       $wp_customize->add_setting( 'kafka_bgcolor_light',
          array(
-            'default'    => '#f0f0f0',
+            'default'    => '#fafaf8',
             'type'       => 'theme_mod',
             'capability' => 'edit_theme_options',
             'transport'  => 'postMessage',
@@ -246,7 +266,7 @@ $wp_customize->add_setting(
 
       $wp_customize->add_setting( 'kafka_bgcolor_dark',
          array(
-            'default'    => '#e6e6e6',
+            'default'    => '#fafaf8',
             'type'       => 'theme_mod',
             'capability' => 'edit_theme_options',
             'transport'  => 'postMessage',

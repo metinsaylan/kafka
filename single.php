@@ -37,11 +37,11 @@ if( have_posts() ){
 		</p>
 		<?php get_template_part( 'share' ); ?>
 	</footer>
-	
-	<?php get_template_part( 'banner', 'post' ); ?>
 
 </div>
 
+	<?php get_template_part( 'banner', 'post' ); ?>
+	<?php get_template_part( 'author', 'post' ) ?>									  
 
 
 <?php

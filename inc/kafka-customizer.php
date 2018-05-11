@@ -289,7 +289,7 @@ $wp_customize->add_setting(
 
     public static function generate_css( $selector, $style, $mod_name, $prefix='', $postfix='', $echo=true ) {
       $return = '';
-      $mod = get_theme_mod($mod_name);
+      $mod = get_theme_mod( $mod_name );
       if ( ! empty( $mod ) ) {
          $return = sprintf('%s { %s:%s; }',
             $selector,

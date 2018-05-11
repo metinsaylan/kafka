@@ -34,13 +34,12 @@ a{ transition: all ease-in-out .2s } .cf:after,.clr{ clear:both } .cf:after,.cf:
 /*- Layout */
 body{ overflow-x: hidden }
 body.page-template-page-template-narrow .container { max-width: 840px }
-#bgstripe { content: ""; display: block; position: fixed; top: 25%; height: 35%; left: -120px; right: 0; z-index: -1; transform: rotate(-12deg); width: 140%; }
 
 /*- Typography */
 body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:<?php echo $kafka_text_color; ?>; font-size: <?php echo $kafka_font_size; ?> ; font-weight:400 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title, h1.page-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
 
 /*- Color Fill */
-body, input[type=text].form-control, .h-entry, .entry, .listing, li.comment, .sidebar .widget, .footer .widget, .bglight { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: <?php echo $kafka_bgcolor_dark; ?> } .footer, nav.navbar, .panel-heading, code, #bgstripe { background: <?php echo $kafka_bgcolor_dark; ?> }
+body { background-color: <?php echo get_theme_mod( 'kafka_body_bgcolor', '#fafaf8' ); ?> } input[type=text].form-control, .h-entry, .entry, .listing, li.comment, .sidebar .widget, .footer .widget, .bglight { background: <?php echo $kafka_bgcolor_light; ?> } blockquote,pre{ background:#fff } .jumbotron { background: <?php echo $kafka_bgcolor_dark; ?> } .footer, nav.navbar, .panel-heading, code { background: <?php echo $kafka_bgcolor_dark; ?> }
 
 /*- Links */
 a{ color:#268bd2 } a:focus,a:hover{ color:#16527c } .entry-title a{ color:#333 } .entry-title a:hover{ color:#268bd2 } a,a:focus,a:hover,.paginated-comments-links a:hover,.wp-pagenavi a:hover { text-decoration:none }
@@ -74,8 +73,8 @@ pre, blockquote, .border, .panel, .pager li>a, .pager li>span, .paginated-commen
 .footer, nav.navbar { box-shadow: none !important; border-radius: 0 !important }
 
 /*- Other customizations */
-nav.navbar{ position:relative; z-index:9; border:0 }
-.navbar-default .navbar-brand{ font-weight:700; font-size:40px }
+nav.navbar{ position:relative; z-index:9; border:0 } 
+.navbar-default .navbar-brand{ font-weight:700; font-size: 28px }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { background-color: <?php echo $kafka_bgcolor_light; ?>; }
 .e-content img{ max-width:100%; height:auto }
 p.post-meta.m0 { margin-bottom: 8px; }

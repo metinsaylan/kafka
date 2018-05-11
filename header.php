@@ -5,15 +5,15 @@
 
 <?php
 
-  $pad = get_theme_mod( 'pad', '30px' );
-  $bglight = get_theme_mod( 'bglight', '#f0f0f0' ); /* f5f1e4 */
-  $bgdark  = get_theme_mod( 'bgdark', '#dddddd' ); /* cec8b7 */
-  $shadow = get_theme_mod( 'shadow', '0 1px 6px 0 rgba(117,117,117,.25); border-radius: 6px' );
-  $border = get_theme_mod( 'border', '0' );
+  $pad = get_theme_mod( 'kafka_global_padding', '30px' );
+  $bglight = get_theme_mod( 'kafka_bgcolor_light', '#fff' ); /* f5f1e4 */
+  $bgdark  = get_theme_mod( 'kafka_bgcolor_dark', '#f5f7f8' ); /* cec8b7 */
+  $shadow = get_theme_mod( 'kafka_global_shadow', '0 1px 6px 0 rgba(117,117,117,.25); border-radius: 6px' );
+  $border = get_theme_mod( 'kafka_global_border', '0' );
   $mute = '#aaa';
 
-  $color = get_theme_mod( 'color', '#474747' );
-  $fontsize = get_theme_mod( 'fontsize', '16px' );
+  $color = get_theme_mod( 'kafka_text_color', '#474747' );
+  $fontsize = get_theme_mod( 'kafka_font_size', '16px' );
 
 ?>
 

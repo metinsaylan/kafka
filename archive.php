@@ -14,7 +14,6 @@ if( $ctr == 2 || $ctr == 5 ){
 </div>
 <?php endwhile; ?>
 <?php get_template_part( 'banner', 'loop' ); ?>
-
 <?php get_template_part('nav', 'blog'); 
 } ?>
 </div>

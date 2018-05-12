@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <div class="row">
-  <div class="col-md-8">
+  <div class="h-feed col-md-8">
 	
 <?php if( have_posts() ){ $ctr = 0; while( have_posts() ): the_post(); $ctr++; 
 
 if( $ctr == 2 || $ctr == 5 ){
-	get_template_part( 'banner', 'post' );
+	get_template_part( 'banner', 'loop' );
 }
 
 ?>
@@ -17,7 +17,7 @@ if( $ctr == 2 || $ctr == 5 ){
  
 <?php endwhile; ?>
 
-<?php get_template_part( 'banner', 'post' ); ?>
+<?php get_template_part( 'banner', 'loop' ); ?>
 <?php get_template_part('nav', 'blog'); 
 
 } ?>

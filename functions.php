@@ -58,10 +58,8 @@ function kafka_theme_setup(){
 
 function kafka_theme_scripts() {
 
-  wp_register_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js', array( 'jquery' ), null, true );
-  
-  wp_enqueue_script( 'bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery', 'popper' ), null, true );
-  
+  wp_register_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', array( 'jquery' ), null, true );
+  wp_enqueue_script( 'bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery', 'popper' ), null, true );  
   wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), null );
 
 }

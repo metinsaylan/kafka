@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-
 <?php wp_head();?>
-
 <?php
 
   $pad = get_theme_mod( 'kafka_global_padding', '30px' );
@@ -13,7 +11,10 @@
   $mute = '#aaa';
 
   $color = get_theme_mod( 'kafka_text_color', '#474747' );
+  $bodyfont = get_theme_mod( 'kafka_body_font', "'Roboto Slab', serif" );
   $fontsize = get_theme_mod( 'kafka_font_size', '16px' );
+  
+  $titlefont = get_theme_mod( 'kafka_title_font', "'Roboto Condensed', sans-serif" );
 
 ?>
 
@@ -33,7 +34,7 @@ body{ overflow-x: hidden }
 body.page-template-page-template-narrow .container { max-width: 840px }
 
 /*- Typography */
-body,button,input,select,textarea { font-family:'Roboto Slab', serif; color:<?php echo $color; ?>; font-size: <?php echo $fontsize; ?> ; font-weight:400; line-height: 1.7 } .entry-title,h1,h2,h3,h4 { font-family:"Roboto Condensed",sans-serif; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title, h1.page-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-family:'Roboto',sans-serif; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
+body,button,input,select,textarea { font-family:<?php echo $bodyfont ?>; color:<?php echo $color; ?>; font-size: <?php echo $fontsize; ?> ; font-weight:400; line-height: 1.7 } .entry-title,h1,h2,h3,h4 { font-family:<?php echo $titlefont; ?>; line-height: 1.3 } .entry-title{ font-size:28px; margin:0 } h1.entry-title, h1.page-title{ font-size:36px } h6.entry-title { font-size:22px; max-height:72px; overflow:hidden; margin-bottom:10px; font-weight:500 } .e-content h3,h4.widget-title{ font-weight:700; font-size:30px; color:#850086 } h4.widget-title{ margin-top:0 } .lead, blockquote { font-size: 105%; font-weight: 100; line-height: 1.4; color: #555; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; } .e-content blockquote { background: #fffbdd } pre{ font-size: 15px; white-space: pre-wrap } code{ padding:.2rem .4rem; background-color:#e5e5e1; border-radius:6px }
 
 /*- Color Fill */
 body { background-color: <?php echo get_theme_mod( 'kafka_body_bgcolor', '#fafaf8' ); ?> }  input[type=text].form-control, .h-entry, .entry, .listing, li.comment, .sidebar .widget, .footer .widget, div#respond, .bglight { background: <?php echo $bglight; ?> } blockquote,pre{ background:#fff } .jumbotron { background: <?php echo $bgdark; ?> } .footer, nav.navbar, .panel-heading, code, #bgstripe { background: <?php echo $bgdark; ?> }

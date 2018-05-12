@@ -1,13 +1,10 @@
 </div>
-
 <footer class="footer">
-
 <?php if( is_active_sidebar('sidebar-footer') ): ?>
 <div class="container"><div class="row">
 <?php dynamic_sidebar('sidebar-footer'); ?>
 </div></div>
 <?php endif; ?>
-
 <div class="container text-center "><div class="row">
 <?php
 	wp_nav_menu( array(
@@ -27,7 +24,6 @@
 	);
 ?>
 </div></div>
-
 <div class="container text-center ">
   <p id="footer-text" class="muted"><?php echo get_theme_mod( 'kafka_footer_text', '&copy; 2018  <a href="' . get_bloginfo( 'url' )  . '" class="muted">' . get_bloginfo( 'name' ) . '</a> - ' . get_bloginfo( 'description' ) ); ?>
   </p>
@@ -37,5 +33,5 @@
 </div>
 
 <?php wp_footer();?> </footer>
-
+<?php get_template_part( 'extra', 'microlight' ); ?>
 </body> </html>

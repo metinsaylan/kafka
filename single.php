@@ -31,7 +31,7 @@ if( have_posts() ){
 	<?php get_template_part('after', 'post'); ?>
   </div>
 
-	<footer class="entry-footer">
+	<footer class="entry-footer mt">
 		<p class="post-meta">
 			<div class="post-tags"><strong>Tags: </strong><?php the_tags( '<span class="tag">', '</span><span class="tag">', '</span>' ); ?></div>
 		</p>

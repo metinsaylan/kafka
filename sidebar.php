@@ -1,5 +1,5 @@
 <div class="col-md-4">
-<aside id="sidebar" class="sidebar" role="complementary">
+<aside id="sidebar" class="sidebar">
 <div class="widget widget_search shadow">
 <?php get_search_form(); ?>
 </div>

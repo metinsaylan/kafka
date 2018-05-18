@@ -33,5 +33,6 @@
 </div>
 
 <?php wp_footer();?> </footer>
+<script>!function(t){t(".banner-fixed").affix({offset:{top:function(){var o=t(".banner-fixed").offset().top+30,n=parseInt(t(document.body).css("padding-top"),10)||0;return this.top=o-n},bottom:function(){var o=t(".footer").outerHeight(!0)||0;return this.bottom=o+30}}})}(jQuery);</script>
 <?php get_template_part( 'extra', 'microlight' ); ?>
 </body> </html>

@@ -103,6 +103,13 @@ a[rel*=category], a[rel*=tag],.pager li>a,.pager li>span,.paginated-comments-lin
 a[rel*=tag]{border-radius:7px 7px 7px 0}
 a[rel*=category]{border-radius:7px 0 7px 7px}
 a[rel*=category]:hover, a[rel*=tag]:hover{color:#268bd2;border-color:#268bd2}
+/* author */
+.author h6 { margin: 0; color: #aaa } 
+.author h3 { margin: 0 0 6px } 
+.author img.u-photo { float: right; width: 175px; margin-left: 30px; border-radius: 6px; background: #dcebf3; padding: 6px; }
+.pad-sm, div#respond { padding: 8px; }
+.author-sm img.u-photo { float: left; margin-right: 8px; }
+.author-sm h4 { margin: 0;  }
 /* comments */
 li.comment,li.pingback{list-style:none}
 img.avatar{border:1px solid #eee;border-radius:50%;float:left;margin-right:20px}

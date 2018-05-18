@@ -106,6 +106,16 @@ a[rel*=category]:hover, a[rel*=tag]:hover{color:#268bd2;border-color:#268bd2}
 /* comments */
 li.comment,li.pingback{list-style:none}
 img.avatar{border:1px solid #eee;border-radius:50%;float:left;margin-right:20px}
+.comments-area{ font-size: 90% }
+li.comment, li.pingback { list-style: none; }
+.comment-meta a { font-size: 85% } p.no-comments { text-align: center; font-size: 120% }
+div#respond { border-radius: 6px; } 
+h3#reply-title{ margin: 0; font-size: 24px } 
+p.logged-in-as { margin: 0 } 
+textarea#comment { border: 1px solid #eee; width: 100%; height: 60px } 
+input#submit { border: 2px solid #333; background: #fff; border-radius: 6px } 
+p.form-submit { text-align: right; margin: 0 }
+
 /* sidebar widgets */
 .sidebar .widget {margin-bottom:4px}
 .sidebar .widget ul {padding:0}

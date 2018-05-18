@@ -59,7 +59,7 @@ class kafka_TableOfContents {
         }
         while ( isset($stack) && sizeof($stack) > 0 ) {
             array_pop($stack);
-			if( is_single() || is_page() ){ $html .= "</li><li><a href=\"#comments\" class=\"jumper\">Comments</a>"; }
+			/*if( is_single() || is_page() ){ $html .= "</li><li><a href=\"#comments\" class=\"jumper\">Comments</a>"; }*/
             $html .= "</li></ol>";
         }
 

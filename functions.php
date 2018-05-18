@@ -66,6 +66,6 @@ function kafka_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'kafka_theme_scripts' );
 
 function kafka_excerpt_length( $length ) {
-    return 20;
+    return 15;
 }
 add_filter( 'excerpt_length', 'kafka_excerpt_length', 999 );

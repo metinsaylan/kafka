@@ -6,7 +6,7 @@ if( have_posts() ){
   while( have_posts() ):
   the_post();
 ?>
-<div class="h-entry">
+<div class="h-entry bglight pad cf">
   <header class="entry-header"> 
   <h1 class="entry-title p-name"><a href="<?php the_permalink(); ?>" rel="bookmark" class="u-url"><?php the_title(); ?></a></h1>
   <?php if( has_excerpt() ): ?>

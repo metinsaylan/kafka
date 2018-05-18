@@ -12,7 +12,7 @@ if( $ctr == 2 || $ctr == 5 ){
 	<?php if( has_post_thumbnail() ): $col2='col-md-8'; ?>
 	<div class="col-md-4">
 	<div class="p-thumb">
-		<a rel="bookmark" class="url" href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $pID->ID, array( 200, 200) ); ?></a>
+		<a rel="bookmark" class="url" href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( null, array( 200, 200) ); ?></a>
 	</div>
 	</div>
 	<?php endif; ?>

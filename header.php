@@ -63,10 +63,10 @@ p.no-comments{font-size:120%}
 .wp-pagenavi>span{color:#ccc}
 .p-summary{color:#777} .p-summary a{color:#777} .p-summary a:hover{color:#268bd2}
 /* background colors */
-input[type=text].form-control,.listing,li.comment,.sidebar .widget,.footer .widget, .wp-pagenavi a,.bglight{background:#fff}
+input[type=text].form-control,.listing,li.comment,.sidebar .widget,.footer .widget, .wp-pagenavi a,.bglight,#respond{background:#fff}
 .e-content blockquote,.container .entry:first-child,.wp-pagenavi a:hover{background:#fffbdd}
 /* spacing */
-.pad,blockquote,li.comment,li.pingback,p.no-comments,.comments-navigation,.wp-pagenavi,.footer{padding:30px}
+.pad,blockquote,li.comment,li.pingback,p.no-comments,.comments-navigation,.wp-pagenavi,.footer,#respond{padding:30px}
 .mb,.navbar,.widget_search,.lead,.e-content h3,li.comment,li.pingback,.panel,.h-entry{margin-bottom:30px}
 .widget p:last-child,.widget ul:last-child{margin-bottom:0}
 blockquote,.e-content pre{margin:30px 0}
@@ -82,7 +82,7 @@ pre,blockquote,.border,.panel,.pager li>a,.pager li>span,.paginated-comments-lin
 .border-bottom{border-width:0 0 1px}
 .widget ul,.widget ul li,div.separator,hr{border-color:#eee}
 /* shadows */
-.shadow,blockquote,.panel,.pager li>a,.pager li>span,.paginated-comments-links a,.paginated-comments-links>span,.wp-pagenavi a,.wp-pagenavi>span,img.aligncenter,img.alignleft,img.alignright,li.comment,li.pingback,.h-entry
+.shadow,blockquote,.panel,.pager li>a,.pager li>span,.paginated-comments-links a,.paginated-comments-links>span,.wp-pagenavi a,.wp-pagenavi>span,img.aligncenter,img.alignleft,img.alignright,li.comment,li.pingback,.h-entry, #respond
 {border-radius:6px;box-shadow:0 1px 6px 0 rgba(117,117,117,.25)}
 .pager li>span,.paginated-comments-links>span,.wp-pagenavi>span{box-shadow:none}
 /* navbar */

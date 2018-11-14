@@ -300,7 +300,7 @@ $wp_customize->add_setting(
    public static function live_preview() {
       wp_enqueue_script(
            'kafka-themecustomizer',
-           get_template_directory_uri() . '/assets/js/kafka-customizer.js',
+           get_template_directory_uri() . '/inc/kafka-customizer.js',
            array(  'jquery', 'customize-preview' ),
            '',
            true

@@ -1,7 +1,7 @@
 <div class="h-feed"><?php if( have_posts() ){ $ctr = 0; while( have_posts() ): the_post(); $ctr++; 
 
 if( $ctr == 2 || $ctr == 5 ){
-	get_template_part( 'banner', 'loop' );
+	get_template_part( 'partials/banner', 'loop' );
 }
  $col2 = 'col-md-12 no-thumb';
 ?>
@@ -29,7 +29,7 @@ if( $ctr == 2 || $ctr == 5 ){
  
 <?php endwhile; ?>
 
-<?php get_template_part( 'banner', 'loop' ); ?>
-<?php get_template_part('nav', 'blog'); 
+<?php get_template_part( 'partials/banner', 'loop' ); ?>
+<?php get_template_part( 'partials/nav', 'blog' ); 
 
 } ?></div>

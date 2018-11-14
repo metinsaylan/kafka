@@ -14,10 +14,10 @@ if( have_posts() ){
   <?php endif; ?>
   </header>
   <div class="page-content e-content" role="main"> 
-	<?php get_template_part( 'banner', 'page' ) ?>
+	<?php get_template_part( 'partials/banner', 'page' ) ?>
     <?php the_content(); ?>
-	<?php get_template_part( 'share' ); ?>
-	<?php get_template_part( 'banner', 'page' ) ?>
+	<?php get_template_part( 'partials/share' ); ?>
+	<?php get_template_part( 'partials/banner', 'page' ) ?>
   </div>
 </div>
 

@@ -20,18 +20,18 @@ if( have_posts() ){
 		<span class="post-categories"><?php the_category(' '); ?></span> <?php edit_post_link('e'); ?></p>
 	</header>
 	<div class="page-content e-content" role="main">
-		<?php get_template_part( 'banner', 'post' ); ?>
+		<?php get_template_part( 'partials/banner', 'post' ); ?>
 		<?php the_content(); ?>
-		<?php get_template_part( 'banner', 'post' ); ?>
+		<?php get_template_part( 'partials/banner', 'post' ); ?>
 	</div>						  
 	<footer class="entry-footer mt">
 		<div class="post-meta"><div class="post-tags"><strong>Tags: </strong><?php the_tags( '<span class="tag">', '</span><span class="tag">', '</span>' ); ?></div></div>
-		<?php get_template_part( 'share' ); ?>
+		<?php get_template_part( 'partials/share' ); ?>
 	</footer>
 </div>
 
-<?php get_template_part( 'author', 'post' ) ?>
-<?php get_template_part( 'nav', 'post' ); ?>
+<?php get_template_part( 'partials/author', 'post' ) ?>
+<?php get_template_part( 'partials/nav', 'post' ); ?>
 
 <?php
  if ( comments_open() || get_comments_number() ) :

@@ -10,8 +10,6 @@ function kafka_authors( $atts, $content = "" ){
 	
 	$output = '';
 	foreach ( $blogusers as $user ) {
-		// get_template_part( 'author', 'loop' );
-		// print_r( $user );
 		$output .= '<div class="author-sm h-card bglight shadow pad-sm mb col-md-4">';
 		$output .= '<img class="u-photo" alt="Photo of '. get_the_author_meta( 'display_name', $user->ID ) . '"
        src="' . esc_url( get_avatar_url( get_the_author_meta( 'user_email' ) , 90 ) ) .'" />';

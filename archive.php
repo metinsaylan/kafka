@@ -3,7 +3,7 @@
 <div class="col-md-8">
 <?php the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>
 <?php the_archive_description( '', '' ); ?>	
-<?php get_template_part( 'loop' ); ?>
+<?php get_template_part( 'partials/loop' ); ?>
 </div>
 <?php get_sidebar(); ?>
 </div>

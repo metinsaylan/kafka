@@ -9,9 +9,18 @@
 		<?php get_search_form(); ?>
 	</div>
 	
-	<?php get_template_part( 'banner', 'page' ) ?>
+	<?php get_template_part( 'partials/banner', 'page' ) ?>
 	
-	<script type="text/javascript"> /* Google Analytics error tracking */ function check_ga() { if ( typeof ga === 'function' && document.referrer ) { ga( 'send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer, {'nonInteraction': true});  } else { setTimeout(check_ga,100); } } check_ga(); </script>
+	<script type="text/javascript"> 
+	/* Google Analytics error tracking */ 
+	function check_ga() { 
+		if ( typeof ga === 'function' && document.referrer ) {
+			 ga( 'send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer, {'nonInteraction': true});  
+		} else { 
+			setTimeout(check_ga,100); 
+			} 
+	} check_ga(); 
+	</script>
 	
   </div>
 </div>

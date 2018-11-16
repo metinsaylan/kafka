@@ -1,4 +1,6 @@
-<?php 
+<?php 
+
+/* todo: move to options */
 function kafka_document_title_separator(  $sep ) {
     return "//";
 }

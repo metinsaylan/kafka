@@ -289,12 +289,13 @@ $wp_customize->add_setting(
       $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
    }
 
-   public static function header_output() {
-      ?>
-      <style type="text/css">
-           <?php self::generate_css( '.sidebar a, .e-content a', 'color', 'kafka_link_color' ); ?>
-      </style>
-      <?php
+   public static function kafka_customizer_css() {
+
+      self::generate_css( '.sidebar a, .e-content a', 'color', 'kafka_link_color' );
+      self::generate_css( 'body', 'color', 'kafka_text_color' );
+      self::generate_css( 'body', 'font-size', 'kafka_font_size' );
+      self::generate_css( '.pad', 'padding', 'kafka_global_padding' );
+
    }
 
    public static function live_preview() {
@@ -327,8 +328,6 @@ $wp_customize->add_setting(
 // Setup the Theme Customizer settings and controls...
 add_action( 'customize_register' , array( 'kafka_Customize' , 'register' ) );
 
-// Output custom CSS to live site
-add_action( 'wp_head' , array( 'kafka_Customize' , 'header_output' ) );
 
 // Enqueue live preview javascript in Theme Customizer admin screen
 add_action( 'customize_preview_init' , array( 'kafka_Customize' , 'live_preview' ) );

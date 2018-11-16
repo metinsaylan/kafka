@@ -150,6 +150,9 @@ div#share a.btn {border:2px solid #ddd;display:inline-block;margin:0 0 4px;paddi
 .listing.page:before {color:#999;content:"PAGE";font-size:12px}
 .listing.post:before {color:#999;content:"POST";font-size:12px}
 div.separator, hr { padding-top: 12px; margin-top: 45px; margin-bottom: 33px; border-top: 3px solid #FFF; clear: both; padding-bottom: 0; border-bottom: 0; background: -moz-radial-gradient(50% 0, ellipse, rgba(196,196,196,0.51) 0, rgba(34,34,34,0) 75%); background: -webkit-radial-gradient(50% 0, ellipse, rgba(196,196,196,0.51) 0, rgba(34,34,34,0) 75%); background: -o-radial-gradient(50% 0, ellipse, rgba(196,196,196,0.51) 0, rgba(34,34,34,0) 75%); background: -ms-radial-gradient(50% 0, ellipse, rgba(196,196,196,0.51) 0, rgba(34,34,34,0) 75%); background: radial-gradient(50% 0, ellipse, rgba(196,196,196,0.51) 0, rgba(34,34,34,0) 75%); }
+
+/* Theme Customizations */
+<?php kafka_Customize::kafka_customizer_css(); ?>
 </style>
 
 </head><body <?php body_class(); ?>>

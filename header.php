@@ -2,8 +2,8 @@
 <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 <?php wp_head();?>
+<link rel="stylesheet" src="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" />
 <style>
-@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed);
 .cf:after,.clr{clear:both} .cf:after,.cf:before {content:" ";display:table}
 .m0,p.m0{margin:0}
 .mb{margin-bottom:30px}
